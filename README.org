@@ -1,0 +1,24 @@
+#+TITLE: A default template for a research project
+#+SUBTITLE: Some subtitle
+#+AUTHOR: Juan M. Escamilla Mólgora
+#+EMAIL: juan[-at+]bioma.mx
+#+LANGUAGE: en
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER: \usepackage[AUTO]{babel}
+#+LATEX_HEADER: \usepackage{tikz}
+#+latex_header: \usepackage{libertine}
+#+OPTIONS: toc:nil        (no default TOC at all)
+
+Something to say!
+
+:LOGBOOK:
+To convert this org file to Github do:
+#+begin_src bash
+pandoc --from=org --to=gfm README.org > README.md
+#+end_src
+:END:
+
+
+bibliographystyle:unsrt
+bibliography:/home/juan/texmf/bibtex/bib/library.bib
